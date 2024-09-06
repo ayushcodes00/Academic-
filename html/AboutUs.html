@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="AboutUs">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Shreya Pandey">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campalace AboutUs</title>
+    <link rel="stylesheet" href="../Css/Style.css">
+    <style>
+        .row {
+            background: radial-gradient(#fff, #c7ef64);
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .col-2 {
+            flex-basis: 50%;
+            min-width: 300px;
+        }
+
+        .text {
+            padding-left: 30px;
+
+        }
+
+        .col-2 img {
+            max-width: 100%;
+            padding: 60px;
+        }
+
+        .col-2 h1 {
+            font-size: 50px;
+            line-height: 60px;
+            margin: 25px 0;
+        }
+
+
+        .categories {
+            margin: 70px 0;
+        }
+
+        .col-2 {
+            flex-basis: 30%;
+            min-width: 250px;
+            margin-bottom: 30px;
+        }
+
+        .col-3 img {
+            width: 100%;
+        }
+
+        .title {
+            text-align: left;
+            margin: 0 auto 80px;
+            position: relative;
+            line-height: 60px;
+            color: #555;
+            padding: left;
+        }
+
+        .title::after {
+            content: '';
+            background: #ff523b;
+            width: 250px;
+            height: 5px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 0;
+            left: 6%;
+            transform: translateX(-50%);
+        }
+
+        .paper {
+            text-align: center;
+        }
+
+        .ourteam h2 {
+            padding-left: 50px;
+        }
+
+        .sub-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 48px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .team-image {
+            position: relative;
+            height: 150px;
+            width: 150px;
+        }
+
+        .team-image.team-image {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #407040;
+        }
+
+        .text {
+            padding-left: 30px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <div class="header">
+        <div class="container">
+            <!-- navigation bar and logo section -->
+            <div class="navbar">
+                <div class="logo">
+                    <a href="Homepage.html">
+                        <img src="../Image/logo/mainlogo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="Homepage.html">Home</a></li>
+                        <li><a href="Product.html">Products</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="Research.html">Research</a></li>
+                        <a href="Form.html">
+                            <button class="login-btn ">Login</button>
+                        </a>
+                    </ul>
+                </nav>
+                <img src="../Image/logo/cart.png" width="30px" height="30px">
+            </div>
+
+        </div>
+    </div>
+    <!-- navigation bar ends -->
+    <!-- start -->
+    <div class="row">
+        <div class="col-2">
+            <h1> AboutUs</h1>
+            <p>Hi There!! <br>CamPalace Makers Here<br>We Sell Best Quality Equipment </p>
+        </div>
+        <div class="text">
+            <p></p>
+        </div>
+        <div class="col-2">
+            <img src="../Image/about us page pic/Featured.png" alt="image">
+        </div>
+    </div>
+    <!-------Our team-------->
+
+    <div class="ourteam">
+        <h2 class="title">Our Team</h2>
+    </div>
+
+    <!-- containng card of four member -->
+    <div class="big-container">
+        <div class="sub-container">
+            <div class="team">
+                <img src="../Image/Cv photo/IMG-4700.jpg" height="150" alt="Sushant Dahal Picture">
+                <div class="name">Sushant </div>
+                <div class="design">Leader</div>
+                <div class="About"></div>
+                <a href="Sushantcv.html">
+                    <button class="pop">Read more</button>
+                </a>
+
+            </div>
+            <div class="team">
+                <img src="../Image/Cv photo/cv photo.png" height="150" alt="Sujal Tuladhar Picture">
+                <div class="name">Sujal Tuladhar </div>
+                <div class="design">Member</div>
+                <div class="About"></div>
+                <a href="SujalCv.html">
+                    <button class="pop">Read more</button>
+                </a>
+            </div>
+            <div class="team">
+                <img src="../Image/Cv photo/shreyapandey.jpg" height="150" alt="Shreya Pandey Picture">
+                <div class="name">Shreeya Pandey </div>
+                <div class="design">Member</div>
+                <div class="About"></div>
+                <a href="ShreeyaCv.html">
+                    <button class="pop">Read more</button>
+                </a>
+            </div>
+            <div class="team">
+                <img src="../Image/Cv photo/WhatsApp Image 2023-05-16 at 16.40.46.jpg" height="150"
+                    alt="Ayush Ojha Picture">
+                <div class="name">Ayush Ojha </div>
+                <div class="design">Member</div>
+                <div class="About"></div>
+                <a href="aayushcv.html">
+                    <button class="pop">Read more</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1 class="logo-text">Cam Palace</h1>
+                <p>
+                    Cam Palace is a E-commerce website designed for people to purchase varieties of camera and
+                    equipment with a reasonable price!
+                </p><br>
+                <div class="contact">
+                    <p>
+                        123-456-789 <br>
+                        campalace@gmail.com
+                    </p>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2>Links</h2>
+                <br>
+                <ul>
+                    <a href="Product.html">
+                        <li>Products</li>
+                    </a>
+                    <a href="blog.html">
+                        <li>News</li>
+                    </a>
+                    <a href="Product2.html">
+                        <li>Offers</li>
+                    </a>
+                    <a href="AboutUs.html">
+                        <li>Team</li>
+                    </a>
+                    <a href="#">
+                        <li>Terms and Conditions</li>
+                    </a>
+                    <div class="footer-logo">
+                        <li style="list-style: none;"><img src="../Image/logo/sonylogo.png" alt="Sony"
+                                style="width: 80%; margin-top:20px ;"></li>
+                        <li style="list-style: none;"><img src="../Image/logo/canonlogo.png" alt="Canon"
+                                style="width: 60%; margin-top:20px ;margin-left: 15px;"></li>
+                        <li style="list-style: none;"><img src="../Image/logo/nikon.png" alt="Nikon"
+                                style="width: 60%; margin-top:20px ; margin-left: 15px;"></li>
+                    </div>
+
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h2>Contact US</h2>
+                <br>
+                <form action="index.html" method="post">
+                    <input type="email" name="email" class="text-input contact-input"
+                        placeholder="Your Email adress...">
+                    <textarea name="Message" class="text-input contact-input" placeholder="Your message...."></textarea>
+                    <button type="submit" class="btn btn-big contact-btn">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            &copy; Shreeya Pandey| Islington College
+        </div>
+    </div>
+    <!-- footer ending -->
+</body>
+
+</html>

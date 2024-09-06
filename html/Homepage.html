@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HomePage">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Sushant Dahal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cam Palace</title>
+    <link rel="stylesheet" href="../Css/Style.css">
+    <style>
+        /* css for entire page */
+        .row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        /*css for the beginning of the page*/
+        .container-01 {
+            display: flex;
+            background: linear-gradient(#fff, #c7ef64);
+            justify-content: center;
+            height: 660px;
+        }
+
+        .col-2 {
+            flex-basis: 50%;
+            min-width: 300px;
+            padding-left: 75px;
+        }
+
+        .col-2 img {
+            max-width: 100%;
+            padding: 50px 0;
+        }
+
+        .col-2 h1 {
+            font-size: 50px;
+            line-height: 60px;
+            margin: 25px 0;
+        }
+
+        /* css for button in all the webpage starts */
+        .btn {
+            display: inline-block;
+            background: black;
+            color: white;
+            padding: 8px 30px;
+            margin: 30px 0;
+            border-radius: 30px;
+            transition: background 0.5s;
+        }
+
+        /* css for hover effect on the button */
+        .btn:hover {
+            background: #ff4406;
+        }
+
+        .btn-big {
+            padding: 11px 20px;
+            line-height: 20px;
+        }
+
+
+
+        .categories {
+            margin: 70px 0;
+        }
+
+        .col-3 {
+            flex-basis: 30%;
+            min-width: 250px;
+            margin-bottom: 30px;
+        }
+
+        .col-3 img {
+            width: 100%
+        }
+
+        .small-container {
+            max-width: 1080px;
+            margin: auto;
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+
+        .col-4 {
+            flex-basis: 25%;
+            padding: 10px;
+            min-width: 200px;
+            margin-bottom: 50px;
+            transition: transform 0.5s;
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .col-4 img {
+            width: 100%;
+        }
+
+        .title {
+            text-align: center;
+            margin: 0 auto 80px;
+            position: relative;
+            line-height: 60px;
+            color: #555;
+        }
+
+        /* css for creating a underline effect under featured products and latest products */
+        /* ::after creates a pseudo-element that is the last child of the selected element. */
+        .title::after {
+            content: '';
+            background: #ffa200;
+            width: 80px;
+            height: 5px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        h4 {
+            color: #555;
+            font-weight: normal;
+        }
+
+        .col-4 p {
+            font-size: 14px;
+        }
+
+        .col-4:hover {
+            /* translate is used in X or Y axis where it moves the certain object like button   */
+            transform: translateY(-5px);
+        }
+
+        /*------------css for feature products---------*/
+        .offer {
+            background: radial-gradient(#fff, #FFFF00);
+            margin-top: 80px;
+            padding: 30px 0;
+            transition: transform 0.1s;
+        }
+
+        .col-2 .offer-img {
+            padding: 50px;
+        }
+
+        .col-2 .offer-img:hover {
+            transform: translateY(-37px);
+        }
+
+        small {
+            color: #555;
+        }
+
+        /*---------css for testimonial--------*/
+        .testimonial {
+            padding-top: 100px;
+        }
+
+        .testimonial .col-3 {
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.5s;
+        }
+
+        .testimonial .col-3 img {
+            width: 50px;
+            margin-top: 20px;
+            border-radius: 50%;
+        }
+
+        .testimonial .col-3:hover {
+            transform: translateY(-10px);
+        }
+
+        .col-3 p {
+            font-size: 12px;
+            margin: 12px 0;
+            color: #777;
+        }
+
+        .testimonial .col-3 h3 {
+            font-weight: 600;
+            color: #555;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<!-- html for nav bar starts -->
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="Homepage.html">
+                        <img src="../Image/logo/mainlogo.png" width="150px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <div class="nav-but">
+                            <li><a href="Homepage.html">Home</a></li>
+                            <li><a href="Product.html">Products</a></li>
+                            <li><a href="blog.html"> Blog</a></li>
+                            <li><a href="AboutUs.html">About Us</a></li>
+                            <li><a href="Research.html">Research</a></li>
+                            <a href="Form.html">
+                                <button class="login-btn">Login</button></a>
+                        </div>
+                    </ul>
+                    </ul>
+                </nav>
+                <img src="../Image/logo/cart.png" width="30px" height="30px">
+            </div>
+        </div>
+    </div>
+    <!-- HTML for nav bar ends -->
+    <!-- HTML for beginning of the page  -->
+    <div class="container-01">
+        <div class="row">
+            <div class="col-2">
+                <h1> Capture Your<br> MOMENTS!</h1>
+                <p>We provide you with the best camera equipments<br> So you can have the best shots you see</p>
+                <a href="Product.html" class="btn">Explore now &#8594;</a>
+
+            </div>
+            <div class="col-2">
+                <img src="../Image/logo/pngwing.com.png">
+            </div>
+        </div>
+    </div>
+
+
+    <!------HTML for featured categories-------->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="../Image/jpg images/hand-screen-man-technology-camera-photography-1079415-pxhere.com.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="../Image/jpg images/man-taking-a-photo-using-black-dslr-camera.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="../Image/jpg images/istockphoto-524381338-612x612.jpg">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-----------HTML for featured products----------->
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <!--linking to product page-->
+                <a href="Product2.html">
+                    <!---Adding images-->
+                    <img
+                        src="../Image/Sony Cameras/Alpha 7R V/ountKits2FBodies2FILCE2FILCE-7RM5-B2FeCommProductImages2FILCE-7RM5_front.png.png"></a>
+                <h4> Sony Alpha 7R V</h4>
+                <p>$3899.99</p>
+            </div>
+            <div class="col-4">
+                <a href="Product2.html">
+                    <img src="../Image/Canon camera/EOS R5 C Body.jpg"></a>
+                <h4>Canon EOS R5 C Body</h4>
+                <p>$4399.99</p>
+            </div>
+            <div class="col-4">
+                <a href="Product2.html">
+                    <img src="../Image/nikon camera/nikonz8.png"></a>
+                <h4> NIKON Z8</h4>
+                <p>$1999.99</p>
+            </div>
+            <div class="col-4">
+                <a href="Product2.html">
+                    <img src="../Image/nikon camera/NIKKOR Z DX 12-28MM F 3.5.png "></a>
+                <h4>NIKKOR Z DX 12-28MM F/3.5-5.6 PZ VR </h4>
+                <p>$1399.99</p>
+            </div>
+            <!--html for latest product-->
+            <h2 class="title">Latest Products</h2>
+            <div class="row">
+                <div class="col-4">
+                    <a href="Product2.html">
+                        <img
+                            src="../Image/Sony Cameras/Alpha 7C/sets2FDigitalImaging2FeCommHeroImages2FILCE7C2FS2F01Alpha7C_front_silver.png.png"></a>
+                    <h4> Sony Alpha 7C</h4>
+                    <p>$1799.99</p>
+                </div>
+                <div class="col-4">
+                    <a href="Product2.html">
+                        <img
+                            src="../Image/Sony Cameras/Alpha 7R III/igitalImaging2FeCommHeroImages2FILCE7RM3A2F01ILCE-7RM3A_Alpha7RIII_front.png.png"></a>
+                    <h4> Sony Alpha 7R III</h4>
+                    <p>$2499.99</p>
+                </div>
+                <div class="col-4">
+                    <a href="Product2.html">
+                        <img
+                            src="../Image/Sony Cameras/Alpha 7R IV/DigitalImaging2FeCommHeroImages2FILCE7RM4A2F01ILCE-7RM4A_Alpha7RIV_front.png.png"></a>
+                    <h4> Sony Alpha 7R IV</h4>
+                    <p>$3199.99</p>
+                </div>
+                <div class="col-4">
+                    <a href="Product2.html">
+                        <img
+                            src="../Image/Sony Cameras/Alpha ZV-E10/DigitalImaging2FeCommHeroImages2FILCZV-E102FW2F01AlphaZV-E10_front_white.png.png"></a>
+                    <h4> Sony Alpha ZV-E10</h4>
+                    <p>$699.99</p>
+                </div>
+                <div class="col-4">
+                    <a href="Product2.html">
+                        <img src="../Image/Canon camera/EOS R5 Body.jpg "></a>
+                    <h4> Canon EOS R5 Body</h4>
+                    <p>$3,399.00</p>
+                </div>
+                <div class="col-4">
+                    <a href="Product2.html">
+                        <img
+                            src="../Image/Sony Cameras/Alpha 6400-APS-C/gitalImaging2FeCommHeroImages2FILCE64002FL2F01a6400_SELP1650_front_black.png.png"></a>
+                    <h4> Sony Alpha 6400-APS-C</h4>
+                    <p>$999.99</p>
+                </div>
+                <div class="col-4">
+                    <a href="Product2.html">
+                        <img
+                            src="../Image/Sony Cameras/Alpha 6100/fault_upload_bucket2FILCE6100_0002_02_21494605affe2c458411657ff7ffb644_1.png.png"></a>
+                    <h4> Sony Alpha 6100</h4>
+                    <p>$849.99</p>
+                </div>
+                <div class="col-4">
+                    <a href="Product2.html">
+                        <img src="../Image/Sony Cameras/Alpha 6000/6000.png.png"></a>
+                    <h4> Sony Alpha 6000</h4>
+                    <p>$549.99</p>
+                </div>
+                <div class="col-4">
+                    <a href="Product2.html">
+                        <img
+                            src="../Image/Sony Cameras/Alpha a7s III/ConsumerAssets2FDigitalImaging2FeCommHeroImages2FILCE7SM32FAlpha7SIII-01.png.png"></a>
+                    <h4> Sony Alpha a7s III</h4>
+                    <p>$3499.99</p>
+                </div>
+                <div class="col-4">
+                    <a href="Product2.html">
+                        <img
+                            src="../Image/Sony Cameras/Alpha 9 II/y2FConsumerAssets2FDigitalImaging2FeCommHeroImages2FILCE9M22FAlpha9II-01.png.png"></a>
+                    <h4> Sony Alpha 9 II</h4>
+                    <p>$4499.99</p>
+                </div>
+                <div class="col-4">
+                    <a href="Product2.html">
+                        <img src="../Image/Items/Tripod.jpeg"></a>
+                    <h4>Tripod</h4>
+                    <p>$999.99</p>
+                </div>
+                <div class="col-4">
+                    <a href="Product2.html">
+                        <img src="../Image/Items/cleaning kit.jpg"></a>
+                    <h4> Camera Cleaning Kit</h4>
+                    <p>$499.99</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- HTML for latest products ends here -->
+    <!------ HTML for exclusive ------->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <a href="Product2.html">
+                        <img src="../Image/nikon camera/zfc-34l.png" class="offer-img"></a>
+                </div>
+                <div class="col-2">
+                    <b>
+                        <p>Capture Your Iconic Moments!</p>
+                    </b>
+                    <h1>ZFC</h1>
+                    <small>Z fc fuses classic design with Z series technology. Small size with big image quality. 4K
+                        videos with full-time Eye-detection AF.
+                        A flip out vlogger screen with live streaming capabilities. This is a camera you think
+                        you've seen before.
+                        But the performance is entirely new.</small><br>
+                    <a href="Product2.html" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------HTML for testimonial-------->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <p>Make no mistake - the Sony a7III is the camera that started a revolution. If there was ever a
+                        camera that caused the most photographers to switch to a mirrorless system, this is most
+                        certainly it.</p>
+                    <img src="../Image/review/mark_shotkit_crop.jpg">
+                    <h3>Mark Condon</h3>
+                </div>
+                <div class="col-3">
+                    <p>The Nikon Z fc is a retro-inspired mirrorless camera that features a 20.9-megapixel sensor
+                        that can deliver charming images. With a good EVF and a fully articulating LCD, the Z fc is
+                        suited to both photographers and videographers who want to turn heads when they're out and
+                        about creating their next masterpiece.</p>
+                    <img src="../Image/review/Naoki-Onozato.jpg">
+                    <h3>Naoki Onozato</h3>
+                </div>
+                <div class="col-3">
+                    <p>One of the old-line global leaders in the photo industry, Canon cameras cover the range from
+                        entry-level point & shoot models to high-end professional SLRs at the very top of the
+                        market.</p>
+                    <img src="../Image/review/canon.jpg">
+                    <h3>Fujio Mitarai</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------HTML for footer begins-------->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1 class="logo-text">Cam Palace</h1>
+                <p>
+                    Cam Palace is a E-commerce website designed for people to purchase varieties of camera and
+                    equipment with a reasonable price!
+                </p><br>
+                <div class="contact">
+                    <p>
+                        123-456-789 <br>
+                        campalace@gmail.com
+                    </p>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2>Links</h2>
+                <br>
+                <ul>
+                    <a href="Product.html">
+                        <!--HTML for making a list in the webpage-->
+                        <li>Products</li>
+                    </a>
+                    <a href="blog.html">
+                        <li>News</li>
+                    </a>
+                    <a href="Product2.html">
+                        <li>Offers</li>
+                    </a>
+                    <a href="AboutUs.html">
+                        <li>Team</li>
+                    </a>
+                    <a href="#">
+                        <li>Terms and Conditions</li>
+                    </a>
+                    <!--creating new div class for footer's logo-->
+                    <div class="footer-logo">
+                        <li style="list-style: none;"><img src="../Image/logo/sonylogo.png" alt="Sony"
+                                style="width: 80%; margin-top:20px ;"></li>
+                        <li style="list-style: none;"><img src="../Image/logo/canonlogo.png" alt="Canon"
+                                style="width: 60%; margin-top:20px ;margin-left: 15px;"></li>
+                        <li style="list-style: none;"><img src="../Image/logo/nikon.png" alt="Nikon"
+                                style="width: 60%; margin-top:20px ; margin-left: 15px;"></li>
+                    </div>
+
+                </ul>
+            </div>
+            <!--html for contact form-->
+            <div class="footer-section contact-form">
+                <h2>Contact US</h2>
+                <br>
+                <form action="index.html" method="post">
+                    <input type="email" name="email" class="text-input contact-input"
+                        placeholder="Your Email adress...">
+                    <textarea name="Message" class="text-input contact-input" placeholder="Your message...."></textarea>
+                    <button type="submit" class="btn btn-big contact-btn">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!--html for copyright in the footer-->
+        <div class="footer-copyright">
+            &copy; Sushant Dahal | Islington College
+        </div>
+    </div>
+    <!--HTML for footer ends-->
+
+</body>
+
+</html>

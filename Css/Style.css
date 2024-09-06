@@ -1,0 +1,172 @@
+/* CSS for all webpages */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    
+}
+/* css for navbar */    
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.navbar a{
+    text-align: center;
+    text-decoration: none;
+    padding-right: 22px;
+    padding-left:22px;  
+    padding-top:22px;
+    padding-bottom:22px;
+    margin-left:1px;
+    border:none;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li:hover{
+    background: #c7ef64;
+}
+.navbar nav button{
+    width: 90px;
+    height: 30px;
+    font-size: 15px;
+    display: inline-block;
+    margin-right: 20px;
+    background: transparent;
+    border: 1px solid #c7ef64;
+    outline: none;
+    border-radius: 10px 20px;
+    cursor: pointer;
+    
+}
+.navbar nav button:hover{
+    background-color: #c7ef64;
+}
+/* css for navbar ends */
+/* css for the first look in the page */
+.container{
+    max-width: 1400px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 550px;
+}
+.header{
+    background: #fff;
+    width: 1500px;
+    height: 50px;
+}
+
+
+/*--------css for footer starts here--------*/
+p {
+    color: #5c5757;
+}
+a{
+    color: #5c5757;
+}
+.footer{
+    background: #303036;
+    color: #d3d3d3;
+    height: 400px;
+    position: relative;
+}
+.footer .footer-content {
+    border: 1px solid #0a823a5e;
+    height: 350px;
+    display: flex;
+}
+
+.footer .footer-content .footer-section{
+    flex: 1;
+    padding: 25px;
+    border: 1px solid #0a823a5e;
+}
+
+.footer .footer-content h1,
+.footer .footer-content h2 {
+    color: white;
+}
+.footer .footer-content .about .contact span{
+    display: block;
+    font-size: 17.6px;
+    margin-bottom: 8px;
+}
+.footer .footer-content .links ul a{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 19.2px;
+    transition: all .5s;
+}
+.footer .footer-content .links ul a:hover{
+    color: white;
+    margin-left: 15px;
+    transition: all .5s;
+}
+.footer .footer-content .contact-form .contact-input{
+    background: #27272727;
+    color: #bebdbd;
+    margin-bottom: 10px;
+    line-height: 20px;
+    padding: 10px;
+    border: none;
+    display: block;
+}
+.footer .footer-content .contact-form .contact-input:focus{
+    background: #1a1a1a;
+}
+.footer .footer-content .contact-form .contact-btn{
+    float: right;
+}
+.footer-logo{
+
+    display: flex;
+}
+.footer-logo li{
+    width: 100%;
+    height: 100%;
+}
+.footer .footer-copyright{
+    background: #343a40;
+    color: #686868;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}
+/* css for button used in the webpages */
+.btn{
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #ff4406;
+}
+.btn-big{
+    padding: 11.2px 20.8px;
+    line-height: 20.8px;
+}
+
+/* css for footer ends */

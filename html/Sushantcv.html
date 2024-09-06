@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* css for the webpage starts here */
+        .row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        /* css for container where all the information is stored */
+        .container-2 {
+            width: 1200px;
+            background: radial-gradient(#fff, #03544979);
+            max-width: 100%;
+            margin: auto;
+            padding: 50px;
+            box-shadow: 0px 10px 50px #858585;
+            display: grid;
+            grid-template-columns: 35% 60%;
+            column-gap: 5%;
+            row-gap: 30px;
+        }
+
+        .avatar img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .avatar {
+            display: flex;
+            justify-content: end;
+        }
+
+        .name {
+            padding-left: 30px;
+            border-left: 1px solid #000;
+        }
+
+        .name h1 {
+            font-weight: 300;
+            font-size: xx-large;
+            margin: 0 0 5px;
+        }
+
+        .name .specialize {
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        .name .contact {
+            padding: 0;
+            list-style: none;
+            margin: 15px;
+        }
+
+        .name .contact span {
+            display: inline-block;
+            background-color: #000;
+            color: #fff;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: small;
+            margin-right: 30px;
+        }
+
+        .name .contact li {
+            padding: 5px 0;
+            padding-left: 5%;
+            transform: translate(-40px);
+            background-color: #0fa59111;
+        }
+
+        .info ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-align: right;
+            line-height: 30px;
+        }
+
+        .intro {
+            padding-left: 30px;
+            border-left: 1px solid #000;
+            margin: 0 auto 80px;
+            text-align: justify;
+            position: relative;
+            color: #555;
+        }
+
+        .intro::after {
+            content: '';
+            background: #000000;
+            width: 90px;
+            height: 3px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 72%;
+            left: 10%;
+            transform: translateX(-50%);
+        }
+
+        h2 {
+            padding: 0;
+            margin: 0 0 20px;
+        }
+
+        .exp {
+            text-align: right;
+        }
+
+        .exp h3 {
+            margin: 20px 0 10px;
+        }
+
+        .skills {
+            margin-top: 0px;
+            padding-left: 5%;
+            text-align: justify;
+            position: relative;
+            color: #555;
+        }
+        /* ::after creates a pseudo-element that is the last child of the selected element. */
+        .skills::after {
+            content: '';
+            background: #000000;
+            width: 80px;
+            height: 3px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 94%;
+            left: 10%;
+            transform: translateX(-50%);
+        }
+
+        .language {
+            margin-top: 0px;
+            text-align: justify;
+            padding-right: 10%;
+            position: relative;
+            color: #555;
+        }
+
+        .language::after {
+            content: '';
+            background: #000000;
+            width: 120px;
+            height: 3px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 70%;
+        }
+
+        .item {
+            text-align: right;
+        }
+
+        .item h3 {
+            margin: 20px 0 10px;
+        }
+    </style>
+    <!--  css for the webpage ends here  -->
+    <link rel="stylesheet" a href="../Css/Style.css">
+    <title>CV</title>
+</head>
+    <!-- html for the navbar begins -->
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../Image/logo/mainlogo.png" width="150px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <div class="nav-but">
+                            <li><a href="">Home</a></li>
+                            <li><a href="Product.html">Products</a></li>
+                            <li><a href=""> Blog</a></li>
+                            <li><a href="AboutUs.html">About Us</a></li>
+                            <li><a href="Research.html">Research</a></li>
+                            <a href="Form.html">
+                                <button class="login-btn">Login</button>
+                            </a>
+                        </div>
+                    </ul>
+                    </ul>
+                </nav>
+                <img src="../Image/logo/cart.png" width="30px" height="30px">
+            </div>
+        </div>
+    </div>
+    <!-- navigation bar ends -->
+    <div class="container-2">
+
+        <div class="avatar">
+            <img src="../Image/Cv photo/IMG-4700.jpg" alt="cv photo">
+        </div>
+        <div class="name">
+            <h1>Sushant Dahal</h1>
+            <div class="specialize">
+                Student & Web-developer
+            </div>
+            <ul class="contact">
+                <li>
+                    <!-- span is used for editing or designing a specific line  -->
+                    <span>Ph:</span>+9865652834
+                </li>
+                <li>
+                    <span>E:</span>dahal.sushant.007@gmail.com
+                </li>
+                <li>
+                    <span>A:</span>Kamalpokhari,Kathmandu
+                </li>
+            </ul>
+        </div>
+        <div class="info">
+            <ul>
+                <li>
+                    From <b> Kathmandu</b> Nepal
+                </li>
+                <li>
+                    2003/12/20
+                </li>
+                <li>
+                    Islington College
+                </li>
+            </ul>
+
+        </div>
+        <!-- html for introduction  -->
+        <div class="intro">
+            <h2>INTRO</h2>
+            I am a student currently studying in Islington College pursuing my bachelors degree in Computing.
+            I am very fond of technical devices and its mechanism. Its been my subject of interest since my childhood.
+        </div>
+        <div class="exp">
+            <h2>Experience </h2>
+            <div class="item">
+                <h4>IT assistant</h4>
+                <div class="time">
+                    <span>2017-2021</span>
+                    <span>K Store</span>
+                </div>
+                <div class="des">
+                    I worked as a assistant in a store where I was assigned as a assistant in hardware department. I
+                    repaired and worked on hardware components.
+                </div>
+            </div>
+            <br>
+            <div class="item">
+                <h2> Study</h2>
+                <div class="time">
+                    <span>2022-running</span>
+                    <span>(Islington College)</span>
+                </div>
+                <div class="des">
+                    I chose this college because of the environment it provides the student for studying. It has been
+                    great experience for the past few months. I hope to complete my bachelors degree with great
+                    experience and knowledge.
+                </div>
+                <br>
+                <div class="time">
+                    <span>2020-2022</span>
+                    <span>(Vishwa Adarsha College)</span>
+                </div>
+                <div class="des">
+                    +2 in Science<br>
+                </div>
+                <br>
+                <div class="time">
+                    <span>2007-2020</span>
+                    <span>(M.E.B.S)</span>
+                </div>
+                <div class="des">
+                    Seconadary Education Examination <br>
+                    Gpa-3.75
+                </div>
+            </div><br>
+
+        </div>
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>Css</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>C</li>
+                <li>Qbasic</li>
+            </ul>
+            <br>
+            <div class="language">
+                <h2>Languages</h2>
+                <ul>
+                    <li>Nepali</li>
+                    <li>English</li>
+                    <li>Hindi</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-------HTML footer starts here-------->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1 class="logo-text">Cam Palace</h1>
+                <p>
+                    Cam Palace is a E-commerce website designed for people to purchase varieties of camera and equipment
+                    with a reasonable price!
+                </p><br>
+                <div class="contact">
+                    <p>
+                        123-456-789 <br>
+                        campalace@gmail.com
+                    </p>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2>Links</h2>
+                <br>
+                <ul>
+                    <a href="Product.html">
+                        <li>Products</li>
+                    </a>
+                    <a href="#">
+                        <li>News</li>
+                    </a>
+                    <a href="Product2.html">
+                        <li>Offers</li>
+                    </a>
+                    <a href="AboutUs.html">
+                        <li>Team</li>
+                    </a>
+                    <a href="#">
+                        <li>Terms and Conditions</li>
+                    </a>
+                    <div class="footer-logo">
+                        <li style="list-style: none;"><img src="../Image/logo/sonylogo.png" alt="Sony"
+                                style="width: 80%; margin-top:20px ;"></li>
+                        <li style="list-style: none;"><img src="../Image/logo/canonlogo.png" alt="Canon"
+                                style="width: 60%; margin-top:20px ;margin-left: 15px;"></li>
+                        <li style="list-style: none;"><img src="../Image/logo/nikon.png" alt="Nikon"
+                                style="width: 60%; margin-top:20px ; margin-left: 15px;"></li>
+                    </div>
+
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h2>Contact US</h2>
+                <br>
+                <form action="index.html" method="post">
+                    <input type="email" name="email" class="text-input contact-input"
+                        placeholder="Your Email adress...">
+                    <textarea name="Message" class="text-input contact-input" placeholder="Your message...."></textarea>
+                    <button type="submit" class="btn btn-big contact-btn">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            &copy; Sushant Dahal | Islington College
+        </div>
+    </div>
+    <!-- HTML for footer ends here -->
+</body>
+
+</html>

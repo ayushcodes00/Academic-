@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="description" content="Product">
+<meta name="keywords" content="HTML, CSS,JavaScript">
+<meta name="author" content="Sujal Tuladhar">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    a {
+        text-decoration: none;
+        color: #555;
+    }
+
+    p {
+        color: #5c5757;
+    }
+
+    .row {
+        background: radial-gradient(#fff, #c7ef64);
+        height: 760px;
+        width: 1600px;
+    }
+
+    .row h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .col-1 p {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    /* button to redirefct to product page */
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btns {
+        align-items: center;
+        display: inline-block;
+        background: #ff523b;
+        color: white;
+        padding: 8px 30px;
+        margin: 30px 0;
+        border-radius: 30px;
+        transition: background 0.5s;
+        cursor: pointer;
+
+    }
+
+    .btns:hover {
+        background: #efba64;
+    }
+
+    /* button to redirefct to product page ends*/
+    title {
+        text-align: center;
+        margin: 0 auto 80px;
+        position: relative;
+        line-height: 60px;
+        color: #555;
+    }
+
+    .container-1 h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 40px
+    }
+
+    .company-1 h3 {
+        padding-left: 50px;
+        font-size: 25px;
+    }
+
+    .discount {
+        text-decoration: line-through;
+    }
+
+
+    /* Photo part of Product Page */
+    .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px;
+    }
+
+    .product img {
+        width: 250px;
+        height: 200px;
+        cursor: pointer;
+        border-radius: 15px;
+        box-shadow: -1px 3px 31px 4px rgb(217, 199, 199);
+    }
+
+    /*while hovering the products, moves the products by y-axis by -10px*/
+    .product img:hover {
+        transform: translateY(-10px);
+    }
+
+    .product h3 {
+        padding-top: 10px;
+        padding-right: 56px;
+        font-size: 18px;
+    }
+
+    .product p {
+        margin: 8px 0;
+        font-size: 14px;
+        color: gray;
+    }
+
+    /* button of add to cart */
+    .product button {
+        padding: 10px 20px;
+        font-size: 14px;
+        background-color: rgb(220, 225, 130);
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .product button:hover {
+        background-color: darkolivegreen;
+        color: white;
+    }
+
+    /* more button */
+    .more {
+        padding: 7px 10px;
+        font-size: 14px;
+        background-color: rgb(220, 225, 130);
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        ;
+    }
+
+    .more:hover {
+        background-color: darkolivegreen;
+        color: white;
+    }
+</style>
+
+<head>
+    <title>CamPalace Product Page</title>
+    <link rel="stylesheet" href="../Css/Style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <!-- navigation bar and logo section -->
+            <div class="navbar">
+                <div class="logo">
+                    <a href="Homepage.html">
+                        <img src="../Image/logo/mainlogo.png" width="125px">
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="Homepage.html">Home</a></li>
+                        <li><a href="Product.html">Products</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="Research.html">Research</a></li>
+                        <a href="Form.html">
+                            <button class="login-btn ">Login</button>
+                        </a>
+                    </ul>
+                </nav>
+                <img src="../Image/logo/cart.png" width="30px" height="30px">
+            </div>
+        </div>
+    </div>
+
+    <!-- Introduction about Producuts -->
+    <div class="row">
+        <div class="col-1">
+            <br><br><br><br><br><br>
+            <h1>Our Informations</h1><br><br>
+            <p>Introducing the latest addition to our line of cameras, the sleek and powerful cameras!<br>
+
+                Capture every moment in stunning detail with our state-of-the-art camera technology.<br>
+                With its advanced autofocus system and high-resolution image sensor.<br>
+                You can trust that every shot will be crisp and clear.<br>
+                Whether you're capturing a beautiful landscape or a fast-moving action scene.</p><br><br>
+
+            <!------adding a shop now button which will lead directly to products------->
+            <div class="button">
+                <button class="btns">Shop now &#8594;</button>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <!-- Product page -->
+    <div class="productpage">
+        <div class="container-1">
+            <h2 class="title">Our Products</h2><br><br>
+        </div>
+        <div class="company-1">
+            <!-- creating table for product section -->
+
+            <table>
+                <tr>
+                    <td>
+                        <!-- Sony camera Section -->
+                        <h3>Sony Cameras</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <div class="product">
+                            <a href="Product2.html">
+                                <img src="../Image/Sony Cameras/Alpha 1/Front.png"></a>
+                            <h3>Sony Alpha 1</h3>
+                            <p>Price:</p>
+                            <p class="discount">4000$</p>
+                            <p>3000$</p>
+                            <button onclick="fun()">Add to Cart</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="product">
+                            <a href="Product2.html">
+                                <img src="../Image/Sony Cameras/Alpha 9/3.png">
+                            </a>
+
+                            <h3>Sony Alpha 9</h3>
+                            <p>Price:</p>
+                            <p class="discount">4000$</p>
+                            <p>3000$</p>
+                            <button onclick="fun()">Add to Cart</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="product">
+                            <a href="Product2.html">
+                                <img src="../Image/Sony Cameras/Alpha 6000/6000.png.png">
+                            </a>
+
+                            <h3>Sony Alpha 6000</h3>
+                            <p>Price:</p>
+                            <p class="discount">4000$</p>
+                            <p>3000$</p>
+                            <button onclick="fun()">Add to Cart</button>
+                        </div>
+                    </td>
+                    <td colspan="1">
+                        <!-------the more button which leads to more list of products------>
+                        <div class="more">
+                            <button class="more" onclick="soon()">more &#8594;</button>
+                        </div>
+                    </td>
+
+
+
+                </tr>
+                <!-- Nikon Camera Section -->
+                <tr>
+                    <td>
+                        <h3>Nikon Camera</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product">
+                            <a href="Product2.html">
+                                <img src="../Image/nikon camera/Main.jpeg">
+                            </a>
+
+                            <h3>Nikon ZFC</h3>
+                            <p>Price:</p>
+                            <p class="discount">4000$</p>
+                            <p>1999.95$</p>
+                            <button onclick="fun()">Add to Cart</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="product">
+                            <a href="Product2.html">
+                                <img src="../Image/nikon camera/z9.png">
+                            </a>
+
+                            <h3>Nikon Z9</h3>
+                            <p>Price:</p>
+                            <p class="discount">6000$</p>
+                            <p>5499.95$</p>
+                            <button onclick="fun()">Add to Cart</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="product">
+                            <a href="Product2.html">
+                                <img src="../Image/nikon camera/z6.png">
+                            </a>
+
+                            <h3>Nikon Z6</h3>
+                            <p>Price:</p>
+                            <p class="discount">4000$</p>
+                            <p>1999.95$</p>
+                            <button onclick="fun()">Add to Cart</button>
+                        </div>
+
+                    </td>
+                    <td colspan="1">
+                        <!-------the more button which leads to more list of products------>
+                        <div class="more">
+                            <button class="more" onclick="soon()">more &#8594;</button>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Canon Camera Section -->
+                <tr>
+                    <td>
+                        <h3>Canon Camera</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="Product2.html">
+                            <div class="product">
+                                <img src="../Image/Canon camera/1.png">
+                        </a>
+                        <h3>Canon EOS R7</h3>
+                        <p>Price:</p>
+                        <p class="discount">4000$</p>
+                        <p>1999.95$</p>
+                        <button onclick="fun()">Add to Cart</button>
+        </div>
+        </td>
+        <td>
+            <div class="product">
+                <a href="Product2.html">
+                    <img src="../Image/Canon camera/2.png"></a>
+                <h3>Nikon EOS RP</h3>
+                <p>Price:</p>
+                <p class="discount">6000$</p>
+                <p>5499.95$</p>
+                <button onclick="fun()">Add to Cart</button>
+            </div>
+        </td>
+        <td>
+            <div class="product">
+                <a href="Product2.html">
+                    <img src="../Image/Canon camera/3.png"></a>
+                <h3>Canon EOS 90D</h3>
+                <p>Price:</p>
+                <p class="discount">4000$</p>
+                <p>3000$</p>
+                <button onclick="fun()">Add to Cart</button>
+            </div>
+        </td>
+        <td colspan="1">
+            <!-------the more button which leads to more list of products------>
+            <div class="more">
+                <button class="more" onclick="soon()">more &#8594;</button>
+            </div>
+        </td>
+        </tr>
+        <!-- Item Section -->
+        <tr>
+            <td>
+                <h3>Items</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="product">
+                    <a href="Product2.html">
+                        <img src="../Image/Items/Tripod.jpeg"></a>
+                    <h3>Tripod</h3>
+                    <p>Price:</p>
+                    <p class="discount">4000$</p>
+                    <p>1999.95$</p>
+                    <button onclick="fun()">Add to Cart</button>
+                </div>
+            </td>
+            <td>
+                <div class="product">
+                    <a href="Product2.html">
+                        <img src="../Image/Items/cleaning kit.jpg"></a>
+                    <h3>Cleaning Kit</h3>
+                    <p>Price:</p>
+                    <p class="discount">4000$</p>
+                    <p>5499.95$</p>
+                    <button onclick="fun()">Add to Cart</button>
+                </div>
+            </td>
+            <td>
+                <div class="product">
+                    <a href="Product2.html">
+                        <img src="../Image/Items/Lens.jpg"></a>
+                    <h3>Lens</h3>
+                    <p>Price:</p>
+                    <p class="discount">4000$</p>
+                    <p>3000$</p>
+                    <button onclick="fun()">Add to Cart</button>
+                </div>
+            </td>
+            <td colspan="1">
+                <!-------the more button which leads to more list of products------>
+                <div class="more">
+                    <button class="more" onclick="soon()">more &#8594;</button>
+                </div>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <br>
+    <!-------footer-------->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1 class="logo-text">Cam Palace</h1>
+                <p>
+                    Cam Palace is a E-commerce website designed for people to purchase varieties of camera and
+                    equipment with a reasonable price!
+                </p><br>
+                <div class="contact">
+                    <p>
+                        123-456-789 <br>
+                        campalace@gmail.com
+                    </p>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2>Links</h2>
+                <br>
+                <ul>
+                    <a href="Product.html">
+                        <li>Products</li>
+                    </a>
+                    <a href="blog.html">
+                        <li>News</li>
+                    </a>
+                    <a href="Product2.html">
+                        <li>Offers</li>
+                    </a>
+                    <a href="AboutUs.html">
+                        <li>Team</li>
+                    </a>
+                    <a href="#">
+                        <li>Terms and Conditions</li>
+                    </a>
+                    <div class="footer-logo">
+                        <li style="list-style: none;"><img src="../Image/logo/sonylogo.png" alt="Sony"
+                                style="width: 80%; margin-top:20px ;"></li>
+                        <li style="list-style: none;"><img src="../Image/logo/canonlogo.png" alt="Canon"
+                                style="width: 60%; margin-top:20px ;margin-left: 15px;"></li>
+                        <li style="list-style: none;"><img src="../Image/logo/nikon.png" alt="Nikon"
+                                style="width: 60%; margin-top:20px ; margin-left: 15px;"></li>
+                    </div>
+
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h2>Contact US</h2>
+                <br>
+                <form action="index.html" method="post">
+                    <input type="email" name="email" class="text-input contact-input"
+                        placeholder="Your Email adress...">
+                    <textarea name="Message" class="text-input contact-input" placeholder="Your message...."></textarea>
+                    <button type="submit" class="btn btn-big contact-btn">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            &copy; Sujal Tuladhar | Islington College
+        </div>
+    </div>
+
+
+
+
+    <script>
+        //funtion to print added to cart using alert
+        function fun() {
+            alert("Added to cart");
+        }
+        //function to print comming soon using alert
+        function soon() {
+            alert("Comming Soon!!");
+        }
+    </script>
+
+</body>
+
+</html>

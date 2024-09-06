@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Blog">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Ayush Ojha">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" a href="../Css/Style.css">
+    <style>
+        .row {
+            background: radial-gradient(#fff, #c7ef64);
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .col-2 {
+
+            flex-basis: 60%;
+            margin-left: 1%;
+            font-size: larger;
+
+        }
+
+        .col-3 img {
+            max-width: 100%;
+            padding: 200px 0;
+
+        }
+
+        .col-2 h1 {
+            font-size: 25px;
+            line-height: 60px;
+            margin: 25px 0;
+            color: #0c0c0c;
+            font-style: italic;
+
+        }
+
+        .col-3 {
+            flex-basis: 30%;
+            min-width: 250px;
+            margin-bottom: 30px;
+        }
+
+        .col-3 img {
+            width: 100%;
+        }
+
+
+        #blog {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+
+        .col-2 h2 {
+
+            font-size: 25px;
+            color: #080808;
+
+
+        }
+
+
+        .blog-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px 0px;
+            flex-wrap: wrap;
+            font-size: 200px;
+        }
+
+        .blog-box {
+            width: 350px;
+            background-color: #ffffff;
+            border: 1px solid #ececec;
+            margin: 20px;
+        }
+
+        .blog-img {
+            width: 100%;
+            height: auto;
+
+
+        }
+
+        .blog-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .blog-text {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .blog-text .blog-title {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #272727;
+
+        }
+
+        .blog-text .blog-title:hover {
+            color: #f33c3c;
+            transition: all ease 0.2s;
+        }
+
+        .blog-text p {
+            color: #9b9b9b;
+            font-size: 0.75rem;
+            display: -webkit-box;
+            -webkit-box-orient: inline-axis;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            margin: 10px 0px;
+
+        }
+
+        .blog-text a {
+            color: #0f0f0f;
+            font-size: 0.75rem;
+        }
+
+        .blog-text a:hover {
+            color: #f33c3c;
+            transition: all ease 0.2s;
+        }
+
+        .blog-box {
+
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: 30px 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <!-- navigation bar of the page -->
+                <div class="logo">
+                    <!-- inserting mainlogo of our page -->
+                    <a href="Homepage.html">
+                        <img src="../Image/logo/mainlogo.png" width="150px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <div class="nav-but">
+                            <li><a href="Homepage.html">Home</a></li>
+                            <li><a href="Product.html">Products</a></li>
+                            <li><a href="blog.html"> Blog</a></li>
+                            <li><a href="AboutUs.html">About Us</a></li>
+                            <li><a href="Research.html">Research</a></li>
+                            <a href="Form.html">
+                                <button class="login-btn">Login</button></a>
+                        </div>
+                    </ul>
+                    </ul>
+                </nav>
+                <!-- inserting image of cart-->
+                <img src="../Image/logo/cart.png" width="30px" height="30px">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <h1>"Technology is a useful Servant but a Dangerous Master".
+                Christian Lous Lange
+            </h1>
+        </div>
+        <div class="col-3">
+            <!-- inserting image of camera -->
+            <img src="../Image/Blog page/pngimg.com - photo_camera_PNG101598.png " alt="img">
+        </div>
+    </div>
+
+
+    <section id="blog">
+        <div class="col-2">
+            <!-- Start of blog Page -->
+            <h2>BLOG ABOUT TECHNOLOGY</h2>
+        </div>
+        <div class="blog-container">
+            <div class="blog-box">
+                <div class="blog-img">
+                    <!-- inserting image of technology -->
+                    <img src="../Image/Blog page/technology-580x358.jpg">
+                </div>
+                <div class="blog-text">
+                    <!-- about Technology -->
+                    <a href="#" class="blog-title">TECHNOLOGY</a>
+                    <p>Technology refers to the knowledge and skills that are acquired and applied to design and
+                        develop items or products for use in real-world situations. Additionally, it simplifies and
+                        relieves stress of our daily life. In the contemporary world, technology is the most
+                        important key to both science and engineering as well as to everyday living. Its primary
+                        objective is to simplify and alleviate the complexities of daily life. Due to different
+                        invention and advancements of Technologies our society have changed a lot. In addition to
+                        advancing science, technology also advances economic growth and increases human prosperity.
+                        However, it is essential to recognize that technology's impact is twofold, yielding both
+                        positive and negative consequences that cannot be disregarded.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <!-- inserting image of positive impacts of technology -->
+                <img src="../Image/Blog page/positive impact image.jpg " alt="">
+            </div>
+            <div class="blog-text">
+                <!-- about positive impacts of technology -->
+                <a href="#" class="blog-title">POSITIVE IMPACTS OF TECHNOLOGY</a>
+                <p>Technology is a valuable tool with numerous positive impacts. It simplifies global communication,
+                    allowing us to connect with diverse individuals worldwide. It enhances efficiency in our daily
+                    lives and education. For example, students can now catch up on missed classes or assignments
+                    through online courses. Transportation has also improved, making it easier to travel comfortably
+                    from one place to another. Online banking has made financial transactions more secure and
+                    convenient. Technology spreads awareness quickly and improves our day-to-day lives, making tasks
+                    easier and faster. However, it's important to acknowledge that technology also has negative
+                    effects that should not be ignored.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <!-- inserting image of negative impacts of technology -->
+                <img src="../Image/Blog page/NegativeImpacts.jpg">
+            </div>
+            <div class="blog-text">
+                <!-- negative impacts of technology -->
+                <a href="#" class="blog-title">NEGATIVE IMPACTS OF TECHNOLOGY</a>
+                <p>While technology is widely recognized as a valuable and beneficial resource,it has negative
+                    impacts as well, it has also led to addiction among many individuals especially childrens.
+                    People often find themselves addicted to various technological activities such as computers,
+                    games, and social media such as Facebook, Instagram people are getting tensed because of getting
+                    less likes and comments. Unfortunately, this addiction negatively affects education and
+                    learning, particularly among children and young people. Many individuals, despite having
+                    numerous responsibilities, waste their time on modern technologies like social media as I said
+                    in above Sentences. This addiction to technology can have detrimental effects on both the mind
+                    and body, leading to issues such as depression and anxiety. Additionally, technology is one of
+                    the reason of having trouble in keeping up the good relationships within families and among
+                    friends.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <!-- inserting image of technology used behind camera -->
+                <img src="../Image/Blog page/Tech behind Camera.jpg ">
+            </div>
+            <div class="blog-text">
+                <!-- technology used in camera -->
+                <a href="#" class="blog-title">TECHNOLOGY USED IN CAMERA</a>
+                <p>As we know, Cameras employ diverse technologies to capture and store images or visuals. Two
+                    commonly used or we can say the two most popular sensors in cameras are CMOS and CCD. In todays
+                    World all camera we use are modern Cameras, Modern cameras produce high-resolution and detailed
+                    images with the help of lenses like zoom lenses, macro lenses, and prime lenses, which allow for
+                    sharp focusing and enlargement. Once the sensor captures the image, the camera's software
+                    processes it to create the final output or image.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <!-- inserting image of conclusion -->
+                <img src="../Image/Blog page/conc.jpg">
+            </div>
+            <div class="blog-text">
+                <!-- conclusion of the page -->
+                <a href="#" class="blog-title">CONCLUSION</a>
+                <p>Technologies and their inventions have significantly decreased human effort and risk in numerous
+                    areas. Depending on how we utilize it, technology can be either beneficial or harmful. Although
+                    there are challenges and potential drawbacks. The overall impacts of technologies has been
+                    positive leading to greater convenience and speed.Technology is essential for us because it
+                    benefits a lot and also in order to create a bright and prosperous future.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+    <!-------footer-------->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1 class="logo-text">Cam Palace</h1>
+                <p>
+                    Cam Palace is a E-commerce website designed for people to purchase varieties of camera and
+                    equipment with a reasonable price!
+                </p><br>
+                <div class="contact">
+                    <p>
+                        123-456-789 <br>
+                        campalace@gmail.com
+                    </p>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2>Links</h2>
+                <br>
+                <ul>
+                    <a href="Product.html">
+                        <li>Products</li>
+                    </a>
+                    <a href="blog.html">
+                        <li>News</li>
+                    </a>
+                    <a href="Product2.html">
+                        <li>Offers</li>
+                    </a>
+                    <a href="#">
+                        <li>Team</li>
+                    </a>
+                    <a href="#">
+                        <li>Terms and Conditions</li>
+                    </a>
+                    <div class="footer-logo">
+                        <li style="list-style: none;"><img src="../Image/logo/sonylogo.png" alt="Sony"
+                                style="width: 80%; margin-top:20px ;"></li>
+                        <li style="list-style: none;"><img src="../Image/logo/canonlogo.png" alt="Canon"
+                                style="width: 60%; margin-top:20px ;margin-left: 15px;"></li>
+                        <li style="list-style: none;"><img src="../Image/logo/nikon.png" alt="Nikon"
+                                style="width: 60%; margin-top:20px ; margin-left: 15px;"></li>
+                    </div>
+
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h2>Contact US</h2>
+                <br>
+                <form action="index.html" method="post">
+                    <input type="email" name="email" class="text-input contact-input"
+                        placeholder="Your Email adress...">
+                    <textarea name="Message" class="text-input contact-input" placeholder="Your message...."></textarea>
+                    <button type="submit" class="btn btn-big contact-btn">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            &copy; Ayush Ojha | Islington College
+        </div>
+    </div>
